@@ -8,10 +8,10 @@ function setup() {
 function draw() {
   background(220);
   osc.start();
-  freq = constrain(map(noise(t), 0, 1, 500, 900), 500, 900);
-  amp = 0.5;
+  freq = constrain(map(noise(t), 0, 1, 100, 900), 100, 900);
+  amp = 0.05;
 
-  osc.freq(freq, 0.1);
-  osc.amp(amp, 0.1);
+  osc.freq(freq, 0.01);
+  osc.amp(amp, 0.01);
   t += 0.01;
 }
